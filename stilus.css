@@ -16,7 +16,7 @@ main,article,header{
 
 
 
-main {
+main, header {
     
     max-width: 800px;
 }
