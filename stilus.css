@@ -22,7 +22,3 @@ input[type=text]{
     background: pink;
 }
 
-p::first-letter{
-    color: red;
-    font-weight: bold;
-}
