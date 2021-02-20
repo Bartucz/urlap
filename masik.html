@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kotán Péter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>Űrlap</header>
+        <main>
+            <nav>
+                <ul>                   
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="masik.html">Másik lap</a></li>
+                </ul>
+            </nav>
+            <article>
+                <form action="felgolgoz.php" target="_blank" method="post">
+                    <fieldset>
+                        <legend>Regisztráció</legend>
+                    <label for="nev">Vezetékneved: *</label>
+                    <input type="text" name="nev" id="nev" required placeholder="Vezetéknév">
+                    <br>
+                    <label for="nev">Keresztneved: *</label>
+                    <input type="text" name="nev" id="nev" required placeholder="Keresztnév">
+                    <br>
+                    <label for="birthday">Születési dátum: *</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <br>
+                    <label for="jelszo">Jelszó: *</label>
+                    <input type="password" name="jelszo" id="jelszo" required>
+                    <br>
+                    <label for="jelszo">Jelszó újra: *</label>
+                    <input type="password" name="jelszo" id="jelszo" required>
+                    <br>
+                    <label for="email">Email cím: *</label>
+                    <input type="email" id="email" name="email" required placeholder="pelda@pelda.com">
+                    <br>
+                    <input type="reset">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Opcionálisan megadható adatok:</legend>
+                    <label for="jelszo">Kedvenc színed: </label>
+                    <input type="color" id="favcolor" name="favcolor" value="#000000">
+                    <br>
+                    <label for="quantity">Kedvenc számod:</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="1000">
+                    <br>
+                    <br>
+                    <label for="jarmu">Van autód?</label>  
+                    <br>
+                    <input type="radio" id="van" name="jarmu" value="van">
+                    <label for="van">Van</label><br>
+                    <input type="radio" id="nincs" name="jarmu" value="nincs">
+                    <label for="nincs">Nincs</label><br>
+                    <br>
+                    <label>MIt szeretsz csinálni szabadidődben?</label>
+                    <br>
+                    <input type="checkbox" id="hobbi1" name="hobbi1" value="Film">
+                    <label for="hobbi1">Film nézés</label><br>
+                    <input type="checkbox" id="hobbi2" name="hobbi2" value="Kirándulás">
+                    <label for="hobbi2">Kirándulás</label><br>
+                    <input type="checkbox" id="hobbi3" name="hobbi3" value="Játék">
+                    <label for="hobbi3">Játék</label><br>
+                    <br>
+                    </fieldset>
+                    
+                    <input type="submit" value="Küld">
+                </form>
+            </article>
+        </main>
+    </body>
+</html>
